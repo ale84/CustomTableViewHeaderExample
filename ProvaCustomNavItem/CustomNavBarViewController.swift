@@ -10,6 +10,7 @@ import UIKit
 
 class CustomNavBarViewController: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var headerView: UIView!
     @IBOutlet var verticalSpaceConstraint: NSLayoutConstraint!
     @IBOutlet weak var customNavigationBar: UINavigationBar!
@@ -24,7 +25,8 @@ class CustomNavBarViewController: UIViewController {
         self.customNavigationBar.translucent = true
         
         let item = UINavigationItem(title: "")
-        titleLabel.text = "titolo"
+        item.backBarButtonItem = UIBarButtonItem(title: "back", style: .Plain, target: nil, action: nil)
+        titleLabel.text = "Some Stuff"
         titleLabel.font = UIFont.boldSystemFontOfSize(17)
         titleLabel.sizeToFit()
         item.titleView = titleLabel
@@ -33,6 +35,9 @@ class CustomNavBarViewController: UIViewController {
         
         headerView.layoutIfNeeded()
         headerViewOriginalHeight = headerView.frame.size.height
+        
+        tableView.contentInset = UIEdgeInsets(top: headerViewOriginalHeight, left: 0, bottom: 0, right: 0)
+        tableView.scrollIndicatorInsets = tableView.contentInset
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -41,6 +46,11 @@ class CustomNavBarViewController: UIViewController {
     }
     
     @IBAction func handlePan(sender: UIPanGestureRecognizer) {
+//        let tableViewOffsetY = tableView.contentOffset.y + tableView.contentInset.top
+//        guard tableViewOffsetY >= 0 && tableViewOffsetY <= headerViewOriginalHeight else {
+//            return
+//        }
+        
         let translation = sender.translationInView(self.view)
         sender.setTranslation(CGPointZero, inView: self.view)
         
@@ -70,5 +80,21 @@ class CustomNavBarViewController: UIViewController {
 extension CustomNavBarViewController: UIGestureRecognizerDelegate {
     func gestureRecognizer(gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWithGestureRecognizer otherGestureRecognizer: UIGestureRecognizer) -> Bool {
         return true
+    }
+}
+
+extension CustomNavBarViewController: UITableViewDelegate, UITableViewDataSource {
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 20
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("cell")!
+        cell.textLabel?.text = "\(indexPath.row)"
+        return cell
     }
 }
