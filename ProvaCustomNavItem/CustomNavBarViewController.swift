@@ -14,6 +14,7 @@ class CustomNavBarViewController: UIViewController {
     @IBOutlet var verticalSpaceConstraint: NSLayoutConstraint!
     @IBOutlet weak var customNavigationBar: UINavigationBar!
     var startLocation: CGPoint? = nil
+    var headerViewOriginalHeight: CGFloat = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,12 +23,13 @@ class CustomNavBarViewController: UIViewController {
         self.customNavigationBar.translucent = true
         let item = UINavigationItem(title: "")
         customNavigationBar.pushNavigationItem(item, animated: true)
+        
+        headerView.layoutIfNeeded()
+        headerViewOriginalHeight = headerView.frame.size.height
     }
     
     @IBAction func handlePan(sender: UIPanGestureRecognizer) {
         let translation = sender.translationInView(self.view)
-//        headerView.center = CGPoint(x:headerView.center.x,
-//                              y:headerView.center.y + translation.y)
         sender.setTranslation(CGPointZero, inView: self.view)
         
         //if translation.y <= 0 {
@@ -35,7 +37,7 @@ class CustomNavBarViewController: UIViewController {
         
         let newConstant = verticalSpaceConstraint.constant + translation.y
         
-        if newConstant < 0 || newConstant > 136 {
+        if newConstant < 0 || newConstant > headerViewOriginalHeight {
             
         }
         else {
