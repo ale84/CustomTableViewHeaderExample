@@ -12,6 +12,8 @@
 		602008DD1D352CD3000CFD97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 602008DB1D352CD3000CFD97 /* Main.storyboard */; };
 		602008DF1D352CD3000CFD97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 602008DE1D352CD3000CFD97 /* Assets.xcassets */; };
 		602008E21D352CD3000CFD97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 602008E01D352CD3000CFD97 /* LaunchScreen.storyboard */; };
+		602008EA1D352F89000CFD97 /* CustomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602008E91D352F89000CFD97 /* CustomTableViewController.swift */; };
+		602008EC1D35338F000CFD97 /* CustomNavBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602008EB1D35338F000CFD97 /* CustomNavBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		602008DE1D352CD3000CFD97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		602008E11D352CD3000CFD97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		602008E31D352CD3000CFD97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		602008E91D352F89000CFD97 /* CustomTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewController.swift; sourceTree = "<group>"; };
+		602008EB1D35338F000CFD97 /* CustomNavBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +60,12 @@
 			children = (
 				602008D71D352CD3000CFD97 /* AppDelegate.swift */,
 				602008D91D352CD3000CFD97 /* ViewController.swift */,
+				602008E91D352F89000CFD97 /* CustomTableViewController.swift */,
 				602008DB1D352CD3000CFD97 /* Main.storyboard */,
 				602008DE1D352CD3000CFD97 /* Assets.xcassets */,
 				602008E01D352CD3000CFD97 /* LaunchScreen.storyboard */,
 				602008E31D352CD3000CFD97 /* Info.plist */,
+				602008EB1D35338F000CFD97 /* CustomNavBarViewController.swift */,
 			);
 			path = ProvaCustomNavItem;
 			sourceTree = "<group>";
@@ -136,6 +142,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				602008DA1D352CD3000CFD97 /* ViewController.swift in Sources */,
+				602008EA1D352F89000CFD97 /* CustomTableViewController.swift in Sources */,
+				602008EC1D35338F000CFD97 /* CustomNavBarViewController.swift in Sources */,
 				602008D81D352CD3000CFD97 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

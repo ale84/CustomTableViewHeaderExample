@@ -9,10 +9,12 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet var headerView: UIView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        navigationItem.titleView = headerView
     }
 
     override func didReceiveMemoryWarning() {
