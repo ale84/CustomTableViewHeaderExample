@@ -139,13 +139,21 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0gu-mR-yOW">
                                 <rect key="frame" x="0.0" y="64" width="600" height="136"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fFb-8s-VrP">
-                                        <rect key="frame" x="8" y="19" width="110" height="109"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="110" placeholderIntrinsicHeight="109" translatesAutoresizingMaskIntoConstraints="NO" id="fFb-8s-VrP">
+                                        <rect key="frame" x="8" y="8" width="110" height="120"/>
                                         <color key="backgroundColor" red="0.23921568630000001" green="1" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="109" id="Iyh-HP-XIw"/>
+                                            <constraint firstAttribute="height" constant="120" id="Txl-Mg-Z5O"/>
                                             <constraint firstAttribute="width" constant="110" id="q9n-7q-Cob"/>
+                                            <constraint firstAttribute="height" constant="109" id="ud7-3t-2rF"/>
                                         </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="Iyh-HP-XIw"/>
+                                                <exclude reference="ud7-3t-2rF"/>
+                                            </mask>
+                                        </variation>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sadklufhljasdhfk" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j9T-oD-xLK">
                                         <rect key="frame" x="126" y="16" width="466" height="21"/>
@@ -161,6 +169,7 @@
                                     <constraint firstAttribute="bottom" secondItem="j9T-oD-xLK" secondAttribute="bottom" constant="99" id="aj2-ay-abk"/>
                                     <constraint firstAttribute="trailing" secondItem="j9T-oD-xLK" secondAttribute="trailing" constant="8" id="eNE-ny-md5"/>
                                     <constraint firstAttribute="width" constant="600" id="iPr-QS-Kob"/>
+                                    <constraint firstItem="fFb-8s-VrP" firstAttribute="top" secondItem="0gu-mR-yOW" secondAttribute="top" priority="750" constant="8" id="nKf-kd-Hky"/>
                                     <constraint firstAttribute="bottom" secondItem="fFb-8s-VrP" secondAttribute="bottom" constant="8" id="xHB-V9-QKO"/>
                                 </constraints>
                                 <variation key="default">
@@ -186,7 +195,7 @@
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="0gu-mR-yOW" secondAttribute="trailing" id="132-91-1Y4"/>
-                            <constraint firstItem="0gu-mR-yOW" firstAttribute="top" secondItem="iTS-rd-JTZ" secondAttribute="bottom" priority="750" id="7sy-A1-cuV"/>
+                            <constraint firstItem="0gu-mR-yOW" firstAttribute="top" secondItem="iTS-rd-JTZ" secondAttribute="bottom" id="7sy-A1-cuV"/>
                             <constraint firstItem="FGA-pJ-Yde" firstAttribute="top" secondItem="iTS-rd-JTZ" secondAttribute="bottom" constant="136" id="8Ez-10-fvX"/>
                             <constraint firstItem="0gu-mR-yOW" firstAttribute="leading" secondItem="QxK-MR-9lH" secondAttribute="leading" id="8ZX-v8-AnV"/>
                             <constraint firstAttribute="trailing" secondItem="FGA-pJ-Yde" secondAttribute="trailing" id="DoT-Er-vhv"/>

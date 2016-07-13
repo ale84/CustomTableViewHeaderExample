@@ -32,29 +32,46 @@ class CustomNavBarViewController: UIViewController {
         let translation = sender.translationInView(self.view)
         sender.setTranslation(CGPointZero, inView: self.view)
         
-        //if translation.y <= 0 {
-        view.layoutIfNeeded()
+//        if sender.state == .Ended {
+//            let fadeTextAnimation = CATransition()
+//            fadeTextAnimation.duration = 0.5
+//            fadeTextAnimation.type = kCATransitionFade
+//            
+//            customNavigationBar.layer.addAnimation(fadeTextAnimation, forKey: "fadeText")
+//            customNavigationBar.topItem?.title = arc4random() % 2 == 0 ? "test 123" : "asdasd"
+//        }
         
         let newConstant = verticalSpaceConstraint.constant + translation.y
-        
-        if newConstant < 0 || newConstant > headerViewOriginalHeight {
-            
+
+        switch newConstant {
+        case 0..<headerViewOriginalHeight/2:
+            headerView.alpha = 0
+        case headerViewOriginalHeight/2...headerViewOriginalHeight:
+            let alphaChange = translation.y/(headerViewOriginalHeight/2)
+            var newAlpha = headerView.alpha + alphaChange
+            if newAlpha <= 0 {
+                newAlpha = 0
+            }
+            if newAlpha > 1 {
+                newAlpha = 1
+            }
+            headerView.alpha = newAlpha
+        case _ where newConstant > headerViewOriginalHeight:
+            headerView.alpha = 1
+        default:
+            break
+        }
+
+        if newConstant < 0 {
+            verticalSpaceConstraint.constant = 0
+        }
+        else if newConstant > headerViewOriginalHeight {
+            verticalSpaceConstraint.constant = headerViewOriginalHeight
         }
         else {
             verticalSpaceConstraint.constant = newConstant
         }
-        //}
-        
-        //headerView.alpha = headerView.alpha - 0.01
-        if sender.state == .Ended {
-            headerView.alpha = 1.0
-            let fadeTextAnimation = CATransition()
-            fadeTextAnimation.duration = 0.5
-            fadeTextAnimation.type = kCATransitionFade
-            
-            customNavigationBar.layer.addAnimation(fadeTextAnimation, forKey: "fadeText")
-            customNavigationBar.topItem?.title = arc4random() % 2 == 0 ? "test 123" : "asdasd"
-        }
+        view.layoutIfNeeded()
     }
 }
 
