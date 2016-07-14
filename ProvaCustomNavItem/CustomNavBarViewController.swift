@@ -64,11 +64,11 @@ extension CustomNavBarViewController: UITableViewDelegate, UITableViewDataSource
     
     func scrollViewDidScroll(scrollView: UIScrollView) {
         let verticalOffset = scrollView.contentOffset.y
-        let scrollAmount = verticalOffset - lastVerticalOffset
+        let scrollAmount = verticalOffset - lastVerticalOffset  //get scrolling amount since last update
         lastVerticalOffset = verticalOffset
-        
-        var newConstant = -verticalOffset
         let alphaVariation = scrollAmount/(headerViewOriginalHeight/2)
+        
+        var newConstant = -verticalOffset //newConstant will be the updated value for the verticalSpaceConstraint constant
         
         switch newConstant {
         case _ where newConstant <= 0:
