@@ -1,5 +1,5 @@
 //
-//  CustomNavBarViewController.swift
+//  CustomTableViewHeaderViewController.swift
 //  ProvaCustomNavItem
 //
 //  Created by Alessio Orlando on 12/07/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CustomNavBarViewController: UIViewController {
+class CustomTableViewHeaderViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var headerView: UIView!
@@ -49,7 +49,7 @@ class CustomNavBarViewController: UIViewController {
     }
 }
 
-extension CustomNavBarViewController: UITableViewDelegate, UITableViewDataSource {
+extension CustomTableViewHeaderViewController: UITableViewDelegate, UITableViewDataSource {
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }

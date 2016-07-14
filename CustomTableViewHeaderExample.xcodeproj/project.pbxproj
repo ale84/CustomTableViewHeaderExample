@@ -11,7 +11,7 @@
 		602008DD1D352CD3000CFD97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 602008DB1D352CD3000CFD97 /* Main.storyboard */; };
 		602008DF1D352CD3000CFD97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 602008DE1D352CD3000CFD97 /* Assets.xcassets */; };
 		602008E21D352CD3000CFD97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 602008E01D352CD3000CFD97 /* LaunchScreen.storyboard */; };
-		602008EC1D35338F000CFD97 /* CustomNavBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602008EB1D35338F000CFD97 /* CustomNavBarViewController.swift */; };
+		602008EC1D35338F000CFD97 /* CustomTableViewHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602008EB1D35338F000CFD97 /* CustomTableViewHeaderViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,7 +21,7 @@
 		602008DE1D352CD3000CFD97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		602008E11D352CD3000CFD97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		602008E31D352CD3000CFD97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		602008EB1D35338F000CFD97 /* CustomNavBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavBarViewController.swift; sourceTree = "<group>"; };
+		602008EB1D35338F000CFD97 /* CustomTableViewHeaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = CustomTableViewHeaderViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +56,7 @@
 			children = (
 				602008E31D352CD3000CFD97 /* Info.plist */,
 				602008D71D352CD3000CFD97 /* AppDelegate.swift */,
-				602008EB1D35338F000CFD97 /* CustomNavBarViewController.swift */,
+				602008EB1D35338F000CFD97 /* CustomTableViewHeaderViewController.swift */,
 				602008DE1D352CD3000CFD97 /* Assets.xcassets */,
 				602008E01D352CD3000CFD97 /* LaunchScreen.storyboard */,
 				602008DB1D352CD3000CFD97 /* Main.storyboard */,
@@ -135,7 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				602008EC1D35338F000CFD97 /* CustomNavBarViewController.swift in Sources */,
+				602008EC1D35338F000CFD97 /* CustomTableViewHeaderViewController.swift in Sources */,
 				602008D81D352CD3000CFD97 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

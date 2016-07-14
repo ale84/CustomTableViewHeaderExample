@@ -6,10 +6,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Custom Nav Bar View Controller-->
+        <!--Custom Table View Header View Controller-->
         <scene sceneID="gSB-6p-qRP">
             <objects>
-                <viewController id="C37-V1-gVH" customClass="CustomNavBarViewController" customModule="ProvaCustomNavItem" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="C37-V1-gVH" customClass="CustomTableViewHeaderViewController" customModule="CustomTableViewHeaderExample" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="T5c-RT-9Zn"/>
                         <viewControllerLayoutGuide type="bottom" id="s7n-TC-f39"/>
