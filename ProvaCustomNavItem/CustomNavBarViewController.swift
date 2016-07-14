@@ -20,9 +20,10 @@ class CustomNavBarViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.customNavigationBar.setBackgroundImage(UIImage(), forBarMetrics: .Default)
-        self.customNavigationBar.shadowImage = UIImage()
-        self.customNavigationBar.translucent = true
+        customNavigationBar.setBackgroundImage(UIImage(), forBarMetrics: .Default)
+        customNavigationBar.shadowImage = UIImage()
+        customNavigationBar.translucent = true
+        customNavigationBar.tintColor = UIColor.blackColor()
         
         let item = UINavigationItem(title: "")
         item.backBarButtonItem = UIBarButtonItem(title: "back", style: .Plain, target: nil, action: nil)
@@ -44,6 +45,7 @@ class CustomNavBarViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         titleLabel.alpha = 0
+        headerView.alpha = 1.0
     }
 }
 

@@ -138,7 +138,7 @@
                         <subviews>
                             <tableView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FGA-pJ-Yde">
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
-                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.87058823529999996" green="0.91764705879999997" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="RQd-Di-kqa" style="IBUITableViewCellStyleDefault" id="1gu-9e-8xJ">
                                         <rect key="frame" x="0.0" y="28" width="600" height="44"/>
@@ -155,7 +155,9 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <color key="backgroundColor" red="0.87058823529999996" green="0.91764705879999997" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.87058823529999996" green="0.91764705879999997" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -164,15 +166,14 @@
                                 </connections>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0gu-mR-yOW">
-                                <rect key="frame" x="0.0" y="64" width="600" height="136"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="160"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="110" placeholderIntrinsicHeight="109" translatesAutoresizingMaskIntoConstraints="NO" id="fFb-8s-VrP">
-                                        <rect key="frame" x="8" y="8" width="110" height="120"/>
-                                        <color key="backgroundColor" red="0.23921568630000001" green="1" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="110" placeholderIntrinsicHeight="109" image="cat" translatesAutoresizingMaskIntoConstraints="NO" id="fFb-8s-VrP">
+                                        <rect key="frame" x="20" y="20" width="120" height="120"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="109" id="Iyh-HP-XIw"/>
                                             <constraint firstAttribute="height" constant="120" id="Txl-Mg-Z5O"/>
-                                            <constraint firstAttribute="width" constant="110" id="q9n-7q-Cob"/>
+                                            <constraint firstAttribute="width" constant="120" id="q9n-7q-Cob"/>
                                             <constraint firstAttribute="height" constant="109" id="ud7-3t-2rF"/>
                                         </constraints>
                                         <variation key="default">
@@ -183,22 +184,23 @@
                                         </variation>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Some Stuff" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j9T-oD-xLK">
-                                        <rect key="frame" x="126" y="16" width="466" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="148" y="24" width="444" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.87058823529411766" green="0.91764705882352937" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="j9T-oD-xLK" firstAttribute="leading" secondItem="fFb-8s-VrP" secondAttribute="trailing" constant="8" id="5y0-p3-Cq3"/>
-                                    <constraint firstItem="fFb-8s-VrP" firstAttribute="leading" secondItem="0gu-mR-yOW" secondAttribute="leading" constant="8" id="Ko3-Fm-Sxq"/>
-                                    <constraint firstAttribute="bottom" secondItem="j9T-oD-xLK" secondAttribute="bottom" constant="99" id="aj2-ay-abk"/>
+                                    <constraint firstItem="fFb-8s-VrP" firstAttribute="leading" secondItem="0gu-mR-yOW" secondAttribute="leadingMargin" id="Ko3-Fm-Sxq"/>
+                                    <constraint firstAttribute="bottom" secondItem="j9T-oD-xLK" secondAttribute="bottom" constant="115" id="aj2-ay-abk"/>
                                     <constraint firstAttribute="trailing" secondItem="j9T-oD-xLK" secondAttribute="trailing" constant="8" id="eNE-ny-md5"/>
                                     <constraint firstAttribute="width" constant="600" id="iPr-QS-Kob"/>
-                                    <constraint firstItem="fFb-8s-VrP" firstAttribute="top" secondItem="0gu-mR-yOW" secondAttribute="top" priority="750" constant="8" id="nKf-kd-Hky"/>
-                                    <constraint firstAttribute="bottom" secondItem="fFb-8s-VrP" secondAttribute="bottom" constant="8" id="xHB-V9-QKO"/>
+                                    <constraint firstItem="fFb-8s-VrP" firstAttribute="top" secondItem="0gu-mR-yOW" secondAttribute="topMargin" priority="750" id="nKf-kd-Hky"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="fFb-8s-VrP" secondAttribute="bottom" id="xHB-V9-QKO"/>
                                 </constraints>
+                                <edgeInsets key="layoutMargins" top="20" left="20" bottom="20" right="20"/>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="iPr-QS-Kob"/>
@@ -212,12 +214,12 @@
                                 </items>
                             </navigationBar>
                         </subviews>
-                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.87058823529999996" green="0.91764705879999997" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="0gu-mR-yOW" secondAttribute="trailing" id="132-91-1Y4"/>
                             <constraint firstItem="FGA-pJ-Yde" firstAttribute="top" secondItem="iTS-rd-JTZ" secondAttribute="bottom" id="5KI-gY-eJz"/>
-                            <constraint firstItem="0gu-mR-yOW" firstAttribute="bottom" secondItem="iTS-rd-JTZ" secondAttribute="bottom" constant="136" id="7sy-A1-cuV"/>
+                            <constraint firstItem="0gu-mR-yOW" firstAttribute="bottom" secondItem="iTS-rd-JTZ" secondAttribute="bottom" constant="160" id="7sy-A1-cuV"/>
                             <constraint firstItem="0gu-mR-yOW" firstAttribute="leading" secondItem="QxK-MR-9lH" secondAttribute="leading" id="8ZX-v8-AnV"/>
                             <constraint firstAttribute="trailing" secondItem="FGA-pJ-Yde" secondAttribute="trailing" id="DoT-Er-vhv"/>
                             <constraint firstItem="FGA-pJ-Yde" firstAttribute="leading" secondItem="QxK-MR-9lH" secondAttribute="leading" id="FMS-H5-4w1"/>
@@ -253,4 +255,7 @@
             <point key="canvasLocation" x="1323" y="2083"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cat" width="1366" height="768"/>
+    </resources>
 </document>
