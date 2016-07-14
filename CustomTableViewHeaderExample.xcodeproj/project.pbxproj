@@ -15,7 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		602008D41D352CD3000CFD97 /* ProvaCustomNavItem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProvaCustomNavItem.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		602008D41D352CD3000CFD97 /* CustomTableViewHeaderExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomTableViewHeaderExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		602008D71D352CD3000CFD97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		602008DC1D352CD3000CFD97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		602008DE1D352CD3000CFD97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -46,7 +46,7 @@
 		602008D51D352CD3000CFD97 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				602008D41D352CD3000CFD97 /* ProvaCustomNavItem.app */,
+				602008D41D352CD3000CFD97 /* CustomTableViewHeaderExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,9 +67,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		602008D31D352CD3000CFD97 /* ProvaCustomNavItem */ = {
+		602008D31D352CD3000CFD97 /* CustomTableViewHeaderExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 602008E61D352CD3000CFD97 /* Build configuration list for PBXNativeTarget "ProvaCustomNavItem" */;
+			buildConfigurationList = 602008E61D352CD3000CFD97 /* Build configuration list for PBXNativeTarget "CustomTableViewHeaderExample" */;
 			buildPhases = (
 				602008D01D352CD3000CFD97 /* Sources */,
 				602008D11D352CD3000CFD97 /* Frameworks */,
@@ -79,9 +79,9 @@
 			);
 			dependencies = (
 			);
-			name = ProvaCustomNavItem;
+			name = CustomTableViewHeaderExample;
 			productName = ProvaCustomNavItem;
-			productReference = 602008D41D352CD3000CFD97 /* ProvaCustomNavItem.app */;
+			productReference = 602008D41D352CD3000CFD97 /* CustomTableViewHeaderExample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -99,7 +99,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 602008CF1D352CD3000CFD97 /* Build configuration list for PBXProject "ProvaCustomNavItem" */;
+			buildConfigurationList = 602008CF1D352CD3000CFD97 /* Build configuration list for PBXProject "CustomTableViewHeaderExample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -112,7 +112,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				602008D31D352CD3000CFD97 /* ProvaCustomNavItem */,
+				602008D31D352CD3000CFD97 /* CustomTableViewHeaderExample */,
 			);
 		};
 /* End PBXProject section */
@@ -252,7 +252,7 @@
 				INFOPLIST_FILE = ProvaCustomNavItem/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = squarelab.ProvaCustomNavItem;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CustomTableViewHeaderExample;
 			};
 			name = Debug;
 		};
@@ -263,14 +263,14 @@
 				INFOPLIST_FILE = ProvaCustomNavItem/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = squarelab.ProvaCustomNavItem;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CustomTableViewHeaderExample;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		602008CF1D352CD3000CFD97 /* Build configuration list for PBXProject "ProvaCustomNavItem" */ = {
+		602008CF1D352CD3000CFD97 /* Build configuration list for PBXProject "CustomTableViewHeaderExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				602008E41D352CD3000CFD97 /* Debug */,
@@ -279,7 +279,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		602008E61D352CD3000CFD97 /* Build configuration list for PBXNativeTarget "ProvaCustomNavItem" */ = {
+		602008E61D352CD3000CFD97 /* Build configuration list for PBXNativeTarget "CustomTableViewHeaderExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				602008E71D352CD3000CFD97 /* Debug */,

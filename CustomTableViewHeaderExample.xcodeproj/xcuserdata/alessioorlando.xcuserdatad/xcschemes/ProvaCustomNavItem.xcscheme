@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "602008D31D352CD3000CFD97"
-               BuildableName = "ProvaCustomNavItem.app"
-               BlueprintName = "ProvaCustomNavItem"
-               ReferencedContainer = "container:ProvaCustomNavItem.xcodeproj">
+               BuildableName = "CustomTableViewHeaderExample.app"
+               BlueprintName = "CustomTableViewHeaderExample"
+               ReferencedContainer = "container:CustomTableViewHeaderExample.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "602008D31D352CD3000CFD97"
-            BuildableName = "ProvaCustomNavItem.app"
-            BlueprintName = "ProvaCustomNavItem"
-            ReferencedContainer = "container:ProvaCustomNavItem.xcodeproj">
+            BuildableName = "CustomTableViewHeaderExample.app"
+            BlueprintName = "CustomTableViewHeaderExample"
+            ReferencedContainer = "container:CustomTableViewHeaderExample.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "602008D31D352CD3000CFD97"
-            BuildableName = "ProvaCustomNavItem.app"
-            BlueprintName = "ProvaCustomNavItem"
-            ReferencedContainer = "container:ProvaCustomNavItem.xcodeproj">
+            BuildableName = "CustomTableViewHeaderExample.app"
+            BlueprintName = "CustomTableViewHeaderExample"
+            ReferencedContainer = "container:CustomTableViewHeaderExample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "602008D31D352CD3000CFD97"
-            BuildableName = "ProvaCustomNavItem.app"
-            BlueprintName = "ProvaCustomNavItem"
-            ReferencedContainer = "container:ProvaCustomNavItem.xcodeproj">
+            BuildableName = "CustomTableViewHeaderExample.app"
+            BlueprintName = "CustomTableViewHeaderExample"
+            ReferencedContainer = "container:CustomTableViewHeaderExample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
