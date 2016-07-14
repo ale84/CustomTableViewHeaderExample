@@ -53,17 +53,9 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="110" placeholderIntrinsicHeight="109" image="cat" translatesAutoresizingMaskIntoConstraints="NO" id="fFb-8s-VrP">
                                         <rect key="frame" x="20" y="20" width="120" height="120"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="109" id="Iyh-HP-XIw"/>
                                             <constraint firstAttribute="height" constant="120" id="Txl-Mg-Z5O"/>
                                             <constraint firstAttribute="width" constant="120" id="q9n-7q-Cob"/>
-                                            <constraint firstAttribute="height" constant="109" id="ud7-3t-2rF"/>
                                         </constraints>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="Iyh-HP-XIw"/>
-                                                <exclude reference="ud7-3t-2rF"/>
-                                            </mask>
-                                        </variation>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Some Stuff" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j9T-oD-xLK">
                                         <rect key="frame" x="148" y="24" width="444" height="21"/>
@@ -78,16 +70,10 @@
                                     <constraint firstItem="fFb-8s-VrP" firstAttribute="leading" secondItem="0gu-mR-yOW" secondAttribute="leadingMargin" id="Ko3-Fm-Sxq"/>
                                     <constraint firstAttribute="bottom" secondItem="j9T-oD-xLK" secondAttribute="bottom" constant="115" id="aj2-ay-abk"/>
                                     <constraint firstAttribute="trailing" secondItem="j9T-oD-xLK" secondAttribute="trailing" constant="8" id="eNE-ny-md5"/>
-                                    <constraint firstAttribute="width" constant="600" id="iPr-QS-Kob"/>
                                     <constraint firstItem="fFb-8s-VrP" firstAttribute="top" secondItem="0gu-mR-yOW" secondAttribute="topMargin" priority="750" id="nKf-kd-Hky"/>
                                     <constraint firstAttribute="bottomMargin" secondItem="fFb-8s-VrP" secondAttribute="bottom" id="xHB-V9-QKO"/>
                                 </constraints>
                                 <edgeInsets key="layoutMargins" top="20" left="20" bottom="20" right="20"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="iPr-QS-Kob"/>
-                                    </mask>
-                                </variation>
                             </view>
                             <navigationBar contentMode="scaleToFill" verticalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="iTS-rd-JTZ">
                                 <rect key="frame" x="0.0" y="20" width="600" height="44"/>
@@ -105,25 +91,13 @@
                             <constraint firstItem="0gu-mR-yOW" firstAttribute="leading" secondItem="QxK-MR-9lH" secondAttribute="leading" id="8ZX-v8-AnV"/>
                             <constraint firstAttribute="trailing" secondItem="FGA-pJ-Yde" secondAttribute="trailing" id="DoT-Er-vhv"/>
                             <constraint firstItem="FGA-pJ-Yde" firstAttribute="leading" secondItem="QxK-MR-9lH" secondAttribute="leading" id="FMS-H5-4w1"/>
-                            <constraint firstItem="0gu-mR-yOW" firstAttribute="top" secondItem="T5c-RT-9Zn" secondAttribute="bottom" priority="750" id="Jk4-M9-9Yd"/>
                             <constraint firstItem="0gu-mR-yOW" firstAttribute="top" secondItem="iTS-rd-JTZ" secondAttribute="bottom" id="MhK-wz-z4i"/>
                             <constraint firstItem="FGA-pJ-Yde" firstAttribute="top" secondItem="0gu-mR-yOW" secondAttribute="bottom" priority="750" id="Mry-87-nGP"/>
-                            <constraint firstItem="0gu-mR-yOW" firstAttribute="top" secondItem="QxK-MR-9lH" secondAttribute="topMargin" priority="750" id="Nr6-Dc-ISc"/>
                             <constraint firstItem="iTS-rd-JTZ" firstAttribute="top" secondItem="T5c-RT-9Zn" secondAttribute="bottom" id="SOP-8h-3og"/>
                             <constraint firstItem="iTS-rd-JTZ" firstAttribute="leading" secondItem="QxK-MR-9lH" secondAttribute="leading" id="U7J-fI-E7m"/>
                             <constraint firstItem="s7n-TC-f39" firstAttribute="top" secondItem="FGA-pJ-Yde" secondAttribute="bottom" id="dNt-Mr-eCU"/>
-                            <constraint firstItem="iTS-rd-JTZ" firstAttribute="top" secondItem="QxK-MR-9lH" secondAttribute="top" id="e0j-SJ-A7d"/>
                             <constraint firstAttribute="trailing" secondItem="iTS-rd-JTZ" secondAttribute="trailing" id="gjJ-qr-IaH"/>
-                            <constraint firstItem="FGA-pJ-Yde" firstAttribute="top" secondItem="0gu-mR-yOW" secondAttribute="bottom" id="xcX-bD-yRt"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="e0j-SJ-A7d"/>
-                                <exclude reference="Jk4-M9-9Yd"/>
-                                <exclude reference="Nr6-Dc-ISc"/>
-                                <exclude reference="xcX-bD-yRt"/>
-                            </mask>
-                        </variation>
                     </view>
                     <connections>
                         <outlet property="customNavigationBar" destination="iTS-rd-JTZ" id="sYd-kv-zqp"/>
