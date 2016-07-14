@@ -7,21 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		602008D81D352CD3000CFD97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602008D71D352CD3000CFD97 /* AppDelegate.swift */; };
-		602008DD1D352CD3000CFD97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 602008DB1D352CD3000CFD97 /* Main.storyboard */; };
-		602008DF1D352CD3000CFD97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 602008DE1D352CD3000CFD97 /* Assets.xcassets */; };
-		602008E21D352CD3000CFD97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 602008E01D352CD3000CFD97 /* LaunchScreen.storyboard */; };
-		602008EC1D35338F000CFD97 /* CustomTableViewHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602008EB1D35338F000CFD97 /* CustomTableViewHeaderViewController.swift */; };
+		60B02AC91D37A21F00F6771F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B02ABF1D37A21F00F6771F /* AppDelegate.swift */; };
+		60B02ACA1D37A21F00F6771F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60B02AC01D37A21F00F6771F /* Assets.xcassets */; };
+		60B02ACB1D37A21F00F6771F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60B02AC11D37A21F00F6771F /* LaunchScreen.storyboard */; };
+		60B02ACC1D37A21F00F6771F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60B02AC31D37A21F00F6771F /* Main.storyboard */; };
+		60B02ACD1D37A21F00F6771F /* CustomTableViewHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B02AC51D37A21F00F6771F /* CustomTableViewHeaderViewController.swift */; };
+		60B02ACF1D37A21F00F6771F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 60B02AC71D37A21F00F6771F /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		602008D41D352CD3000CFD97 /* CustomTableViewHeaderExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomTableViewHeaderExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		602008D71D352CD3000CFD97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		602008DC1D352CD3000CFD97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		602008DE1D352CD3000CFD97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		602008E11D352CD3000CFD97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		602008E31D352CD3000CFD97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		602008EB1D35338F000CFD97 /* CustomTableViewHeaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = CustomTableViewHeaderViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		60B02ABF1D37A21F00F6771F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		60B02AC01D37A21F00F6771F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		60B02AC21D37A21F00F6771F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		60B02AC41D37A21F00F6771F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		60B02AC51D37A21F00F6771F /* CustomTableViewHeaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewHeaderViewController.swift; sourceTree = "<group>"; };
+		60B02AC71D37A21F00F6771F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +39,7 @@
 		602008CB1D352CD3000CFD97 = {
 			isa = PBXGroup;
 			children = (
-				602008D61D352CD3000CFD97 /* ProvaCustomNavItem */,
+				60B02ABE1D37A21F00F6771F /* CustomTableViewHeaderExample */,
 				602008D51D352CD3000CFD97 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,17 +52,17 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		602008D61D352CD3000CFD97 /* ProvaCustomNavItem */ = {
+		60B02ABE1D37A21F00F6771F /* CustomTableViewHeaderExample */ = {
 			isa = PBXGroup;
 			children = (
-				602008E31D352CD3000CFD97 /* Info.plist */,
-				602008D71D352CD3000CFD97 /* AppDelegate.swift */,
-				602008EB1D35338F000CFD97 /* CustomTableViewHeaderViewController.swift */,
-				602008DE1D352CD3000CFD97 /* Assets.xcassets */,
-				602008E01D352CD3000CFD97 /* LaunchScreen.storyboard */,
-				602008DB1D352CD3000CFD97 /* Main.storyboard */,
+				60B02ABF1D37A21F00F6771F /* AppDelegate.swift */,
+				60B02AC01D37A21F00F6771F /* Assets.xcassets */,
+				60B02AC11D37A21F00F6771F /* LaunchScreen.storyboard */,
+				60B02AC31D37A21F00F6771F /* Main.storyboard */,
+				60B02AC51D37A21F00F6771F /* CustomTableViewHeaderViewController.swift */,
+				60B02AC71D37A21F00F6771F /* Info.plist */,
 			);
-			path = ProvaCustomNavItem;
+			path = CustomTableViewHeaderExample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,9 +123,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				602008E21D352CD3000CFD97 /* LaunchScreen.storyboard in Resources */,
-				602008DF1D352CD3000CFD97 /* Assets.xcassets in Resources */,
-				602008DD1D352CD3000CFD97 /* Main.storyboard in Resources */,
+				60B02ACF1D37A21F00F6771F /* Info.plist in Resources */,
+				60B02ACA1D37A21F00F6771F /* Assets.xcassets in Resources */,
+				60B02ACC1D37A21F00F6771F /* Main.storyboard in Resources */,
+				60B02ACB1D37A21F00F6771F /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,28 +137,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				602008EC1D35338F000CFD97 /* CustomTableViewHeaderViewController.swift in Sources */,
-				602008D81D352CD3000CFD97 /* AppDelegate.swift in Sources */,
+				60B02AC91D37A21F00F6771F /* AppDelegate.swift in Sources */,
+				60B02ACD1D37A21F00F6771F /* CustomTableViewHeaderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		602008DB1D352CD3000CFD97 /* Main.storyboard */ = {
+		60B02AC11D37A21F00F6771F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				602008DC1D352CD3000CFD97 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		602008E01D352CD3000CFD97 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				602008E11D352CD3000CFD97 /* Base */,
+				60B02AC21D37A21F00F6771F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		60B02AC31D37A21F00F6771F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				60B02AC41D37A21F00F6771F /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -249,7 +251,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = ProvaCustomNavItem/Info.plist;
+				INFOPLIST_FILE = CustomTableViewHeaderExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = squarelab.ProvaCustomNavItem;
 				PRODUCT_NAME = CustomTableViewHeaderExample;
@@ -260,7 +262,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = ProvaCustomNavItem/Info.plist;
+				INFOPLIST_FILE = CustomTableViewHeaderExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = squarelab.ProvaCustomNavItem;
 				PRODUCT_NAME = CustomTableViewHeaderExample;
