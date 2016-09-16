@@ -12,7 +12,6 @@
 		60B02ACB1D37A21F00F6771F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60B02AC11D37A21F00F6771F /* LaunchScreen.storyboard */; };
 		60B02ACC1D37A21F00F6771F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60B02AC31D37A21F00F6771F /* Main.storyboard */; };
 		60B02ACD1D37A21F00F6771F /* CustomTableViewHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B02AC51D37A21F00F6771F /* CustomTableViewHeaderViewController.swift */; };
-		60B02ACF1D37A21F00F6771F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 60B02AC71D37A21F00F6771F /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,11 +91,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = Cinello;
 				TargetAttributes = {
 					602008D31D352CD3000CFD97 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = G23NY7NQRD;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -123,7 +124,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60B02ACF1D37A21F00F6771F /* Info.plist in Resources */,
 				60B02ACA1D37A21F00F6771F /* Assets.xcassets in Resources */,
 				60B02ACC1D37A21F00F6771F /* Main.storyboard in Resources */,
 				60B02ACB1D37A21F00F6771F /* LaunchScreen.storyboard in Resources */,
@@ -178,8 +178,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -223,8 +225,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -243,6 +247,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -251,10 +256,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = G23NY7NQRD;
 				INFOPLIST_FILE = CustomTableViewHeaderExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = example.CustomHeader;
 				PRODUCT_NAME = CustomTableViewHeaderExample;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -262,10 +269,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = G23NY7NQRD;
 				INFOPLIST_FILE = CustomTableViewHeaderExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = example.CustomHeader;
 				PRODUCT_NAME = CustomTableViewHeaderExample;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

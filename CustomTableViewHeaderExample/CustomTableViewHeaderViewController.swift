@@ -2,9 +2,27 @@
 //  CustomTableViewHeaderViewController.swift
 //  ProvaCustomNavItem
 //
-//  Created by Alessio Orlando on 12/07/16.
-//  Copyright © 2016 Cinello. All rights reserved.
+//  The MIT License (MIT)
 //
+//  Copyright (c) 2016 Alessio Orlando
+//
+//  Permission is hereby granted, free of charge, to any person obtaining a copy
+//  of this software and associated documentation files (the "Software"), to deal
+//  in the Software without restriction, including without limitation the rights
+//  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+//  copies of the Software, and to permit persons to whom the Software is
+//  furnished to do so, subject to the following conditions:
+//
+//  The above copyright notice and this permission notice shall be included in all
+//  copies or substantial portions of the Software.
+//
+//  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+//  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+//  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+//  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+//  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+//  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+//  SOFTWARE.
 
 import UIKit
 
@@ -20,19 +38,19 @@ class CustomTableViewHeaderViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        customNavigationBar.setBackgroundImage(UIImage(), forBarMetrics: .Default)
+        customNavigationBar.setBackgroundImage(UIImage(), for: .default)
         customNavigationBar.shadowImage = UIImage()
-        customNavigationBar.translucent = true
-        customNavigationBar.tintColor = UIColor.blackColor()
+        customNavigationBar.isTranslucent = true
+        customNavigationBar.tintColor = UIColor.black
         
         let item = UINavigationItem(title: "")
-        item.backBarButtonItem = UIBarButtonItem(title: "back", style: .Plain, target: nil, action: nil)
+        item.backBarButtonItem = UIBarButtonItem(title: "back", style: .plain, target: nil, action: nil)
         titleLabel.text = "Some Stuff"
-        titleLabel.font = UIFont.boldSystemFontOfSize(17)
+        titleLabel.font = UIFont.boldSystemFont(ofSize: 17)
         titleLabel.sizeToFit()
         item.titleView = titleLabel
         
-        customNavigationBar.pushNavigationItem(item, animated: true)
+        customNavigationBar.pushItem(item, animated: true)
         
         headerView.layoutIfNeeded()
         headerViewOriginalHeight = headerView.frame.size.height
@@ -42,7 +60,7 @@ class CustomTableViewHeaderViewController: UIViewController {
         lastVerticalOffset = tableView.contentOffset.y
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         titleLabel.alpha = 0
         headerView.alpha = 1.0
@@ -50,21 +68,21 @@ class CustomTableViewHeaderViewController: UIViewController {
 }
 
 extension CustomTableViewHeaderViewController: UITableViewDelegate, UITableViewDataSource {
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 20
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell")!
-        cell.textLabel?.text = "\(indexPath.row)"
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell")!
+        cell.textLabel?.text = "\((indexPath as NSIndexPath).row)"
         return cell
     }
     
-    func scrollViewDidScroll(scrollView: UIScrollView) {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let verticalOffset = scrollView.contentOffset.y
         let scrollAmount = verticalOffset - lastVerticalOffset  //get scrolling amount since last update
         lastVerticalOffset = verticalOffset
